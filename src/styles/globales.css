@@ -1,5 +1,7 @@
 :root {
     --colorDeFondoPrimario: #ceae8a;
+    --negro: #000;
+    --blanco: #fff;
 }
 
 html {

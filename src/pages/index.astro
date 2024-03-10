@@ -1,5 +1,7 @@
 ---
 import "../styles/globales.css";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 
 const pageTitle = "vBlogDeCafe";
 ---
@@ -13,11 +15,9 @@ const pageTitle = "vBlogDeCafe";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Inicio</a>
-		<a href="/abaut/">Nosotros</a>
-		<a href="/blog">vBlog</a>
-
+		<Navigation />
 		<h1>{pageTitle}</h1>
 		<h2>Aprendiendo de expertos del Cafe, un viaje cultural</h2>
+		<Footer />
 	</body>
 </html>
