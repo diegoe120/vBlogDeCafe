@@ -1,5 +1,7 @@
 ---
+import "../styles/globales.css";
 
+const pageTitle = "vBlogDeCafe";
 ---
 
 <html lang="en">
@@ -8,14 +10,14 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>vBlogDeCafe</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<a href="/">Inicio</a>
 		<a href="/abaut/">Nosotros</a>
 		<a href="/blog">vBlog</a>
 
-		<h1>vBlogDeCafe</h1>
+		<h1>{pageTitle}</h1>
 		<h2>Aprendiendo de expertos del Cafe, un viaje cultural</h2>
 	</body>
 </html>

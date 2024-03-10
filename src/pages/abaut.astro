@@ -1,5 +1,22 @@
 ---
+import "../styles/globales.css";
 
+const pageTitle = "vBlog De Cafe - Sobre Nosotros";
+const identity = {
+    firstName: "Diego",
+    country: "Argentina",
+    occupation: "Reparador de Parabrisas",
+    hobbies: ["Cine - series", "buen vivir", "tecnologia"],
+};
+
+const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Astro",
+    "Redacción de documentos",
+];
 ---
 
 <html lang="en">
@@ -8,14 +25,14 @@
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>vBlogDeCafe - Nosotros</title>
+        <title>{pageTitle}</title>
     </head>
     <body>
         <a href="/">Inicio</a>
         <a href="/abaut/">Nosotros</a>
         <a href="/blog">vBlog</a>
 
-        <h1>Sobre Nosotros</h1>
+        <h1>{pageTitle}</h1>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consequuntur, iusto sed obcaecati numquam sit necessitatibus
@@ -27,5 +44,24 @@
             ipsam, fugit id, quaerat fuga aliquid ipsa dolore ut perferendis sed
             a porro in saepe eveniet sequi repellendus. Quod, cupiditate illum.
         </p>
+        <p>He aquí algunos datos sobre mí:</p>
+        <ul>
+            <li>Me llamo {identity.firstName}.</li>
+            <li>
+                Vivo en {identity.country} y trabajo como {identity.occupation}.
+            </li>
+            {
+                identity.hobbies.length >= 2 && (
+                    <li>
+                        Dos de mis aficiones son: {identity.hobbies[0]} y{" "}
+                        {identity.hobbies[1]}
+                    </li>
+                )
+            }
+        </ul>
+        <p>Mis habilidades son:</p>
+        <ul>
+            {skills.map((skill) => <li>{skill}</li>)}
+        </ul>
     </body>
 </html>
