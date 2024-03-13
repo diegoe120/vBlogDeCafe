@@ -5,16 +5,19 @@
 }
 
 html {
-    background-color: var(--colorDeFondoPrimario);
+    /* background-color: var(--colorDeFondoPrimario); */
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0 auto;
     width: 100%;
     max-width: 80ch;
-    padding: 1rem;
+    padding: 0rem;
     line-height: 1.5;
+    background-color: var(--colorDeFondoPrimario);
 }
 
 * {
@@ -22,10 +25,41 @@ body {
 }
 
 h1 {
-    margin: 1rem 0;
+
     font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
 }
 
 a {
     text-decoration: none;
+}
+
+.barra-menu {
+    color: var(--blanco);
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-hero {
+    margin-top: 0;
+    padding: 0;
+    height: 10rem;
+    width: 100%;
+    background-image: url('../image/banner.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-titulo {
+    padding: 1.5rem;
 }
