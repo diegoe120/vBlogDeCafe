@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
 :root {
+    --fontTitulo: 'Arizonia', cursive;
     --colorDeFondoPrimario: #ceae8a;
     --negro: #000;
     --blanco: #fff;
@@ -62,4 +65,8 @@ a {
 
 .hero-titulo {
     padding: 1.5rem;
+}
+
+.titulo-span {
+    font-family: var(--fontTitulo);
 }
