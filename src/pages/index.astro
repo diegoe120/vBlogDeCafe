@@ -1,6 +1,5 @@
 ---
 import "../styles/globales.css";
-import { Image } from "astro:assets";
 import imgCafeEtiopia from "../image/coffee.jpg";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -35,8 +34,8 @@ const pageTitle = "vBlogDeCafe";
 				siglos y una parte esencial de la vida cotidiana de los etíopes.
 			</p>
 			<picture>
-				<Image
-					src={imgCafeEtiopia}
+				<img
+					src="{imgCafeEtiopia}"
 					alt="mapa de etipia con granos de cafe"
 				/>
 				<figcaption class="text-xs">
