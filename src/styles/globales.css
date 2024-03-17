@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --fontTitulo: 'Arizonia', cursive;
+    --fontPrincipal: "Montserrat", sans-serif;
     --colorDeFondoPrimario: #c9baa8;
     --negro: #000;
     --blanco: #fff;
@@ -74,4 +75,8 @@ a {
 
 .titulo-span {
     font-family: var(--fontTitulo);
+}
+
+.titulo-portada {
+    font-family: var(--fontPrincipal);
 }
